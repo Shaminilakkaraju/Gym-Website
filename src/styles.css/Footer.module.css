@@ -1,0 +1,51 @@
+.footer {
+    background-color:orange;
+    color: #fff;
+    padding: 3rem 2rem;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .contactInfo,
+  .socialMedia {
+    flex-basis: 300px;
+  }
+  
+  .footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer p,
+  .footer li {
+    font-size: 1rem;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #ddd;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
