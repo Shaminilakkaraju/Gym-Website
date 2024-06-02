@@ -1,0 +1,23 @@
+.explore {
+  height: 500px;
+  padding: 32px 0; 
+  text-align: center;
+  background-image: url("../images/gymbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.explore h1 {
+  margin-top: 300px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: orange;
+}
+
+.explore p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: orange;
+}

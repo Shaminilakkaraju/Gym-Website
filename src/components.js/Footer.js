@@ -1,30 +1,40 @@
 import React from 'react';
-import styles from '../styles.css/Footer.module.css';
+import { FaEnvelope, FaPhone, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
+import '../styles/Footer.css';
 
-function Footer() {
+const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.footerContent}>
-        <div className={styles.contactInfo}>
-          <h4>Contact Us</h4>
-          <p>123 Gym Street, Anytown USA</p>
-          <p>Phone: 555-555-5555</p>
-          <p>Email: info@gymwebsite.com</p>
+    <footer>
+      <div className="footer-content">
+        <div className="contact-info">
+          <h3>Contact Us</h3>
+          <p>
+          <FaEnvelope /> <a href="mailto:info@thefitnessclub.com">info@thefitnessclub.com</a>
+          </p>
+          <p>
+          <FaPhone /> <a href="tel:+919814523488">+91 9814523488</a>
+          </p>
         </div>
-        <div className={styles.socialMedia}>
-          <h4>Follow Us</h4>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-          </ul>
+        <div className="social-media">
+          <h3>Follow Us</h3>
+          <div className="social-icons">
+            <a href="https://www.instagram.com/foodordering" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+            <a href="https://twitter.com/foodordering" target="_blank" rel="noopener noreferrer">
+              <FaTwitter />
+            </a>
+            <a href="https://www.facebook.com/foodordering" target="_blank" rel="noopener noreferrer">
+              <FaFacebook />
+            </a>
+          </div>
         </div>
       </div>
-      <div className={styles.copyright}>
-        &copy; 2023 Gym Website. All rights reserved.
+      <div className="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} THE FITNESS CLUB. All rights reserved.</p>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

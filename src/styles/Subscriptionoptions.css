@@ -1,0 +1,77 @@
+.subscribe-options {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.subscribe-options h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  margin: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 300px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.plan-card:hover {
+  transform: scale(1.02);
+  background-color: #ff9900; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plan-header {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.plan-header h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.plan-header p.price {
+  font-weight: bold;
+}
+
+.plan-body {
+  padding: 20px;
+}
+
+.plan-body p.description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.plan-body ul.benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-body ul.benefits li {
+  margin-bottom: 5px;
+}
+
+.plan-footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.plan-footer button {
+  background-color: #ff9900; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

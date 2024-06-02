@@ -1,17 +1,13 @@
 import React from 'react';
-import styles from '../styles.css/Explore.module.css';
-import gymbg from '../images/gym bg.jpg'
+import '../styles/Explore.css';
 
-function Explore() {
+function ExploreSection() {
   return (
-    <section className={styles.explore}>
-      <div className={styles.heroImage}>
-        <h1>Welcome to Our Gym</h1>
+    <section className="explore">
+      <h1>Welcome to Our Gym</h1>
         <p>Discover the best fitness experience in town.</p>
-        <a href="#" className={styles.ctaButton}>Join Now</a>
-      </div>
     </section>
   );
 }
 
-export default Explore;
+export default ExploreSection;

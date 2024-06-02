@@ -1,28 +1,32 @@
 import React from 'react';
-import { useRef } from 'react';
-import styles from '../styles.css/Navbar.module.css';
-import gymLogo from '../images/gym-logo.png'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
+import '../styles/Navbar.css';
 
-const Navbar = () => {
-  const subscribeRef = useRef(null);
-  const handlesubscribeClick = () => {
-    subscribeRef.current.scrollIntoView({ behavior: "smooth"});
-  }
+function Navbar() {
   return (
-    <nav className={styles.navbar}>
-     <div className={styles.logo}>
-        <img src={gymLogo} alt="Gym Logo" className={styles.logoImage} /> THE FITNESS CLUB
-      </div>
-      <ul className={styles.navList}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/explore">Explore</Link></li>
-        <li><Link to="/why-choose-us">Why Choose Us</Link></li>
-        <li><Link to="/subscribe">Subscribe</Link></li>
-        <li><Link to="/testimonials">Testimonials</Link></li>
+    <nav className="navbar">
+      <p><FontAwesomeIcon icon={faDumbbell} />THE FITNESS CLUB</p>
+      <ul className="nav-links">
+        <li>
+          <Link to="/" className="nav-link">
+            Explore
+          </Link>
+        </li>
+        <li>
+          <Link to="/why-choose-us" className="nav-link">
+            Why Choose Us
+          </Link>
+        </li>
+        <li>
+          <Link to="/subscription-options" className="nav-link">
+            Subscribe
+          </Link>
+        </li>
       </ul>
     </nav>
   );
 }
 
-  export default Navbar
+export default Navbar;
